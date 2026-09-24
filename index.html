@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artify — Opportunities for your practice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="artify.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" data-screen="opportunities" aria-label="Artify home"><span>ART</span><i>IFY</i></a>
+      <div class="sidebar-rule"></div>
+      <p class="eyebrow side-label">Your art agent</p>
+      <nav class="nav-list" aria-label="Main navigation">
+        <button class="nav-item active" data-screen="opportunities"><span class="nav-icon">◒</span>Opportunities <b>6</b></button>
+        <button class="nav-item" data-screen="profile"><span class="nav-icon">◌</span>My profile</button>
+        <button class="nav-item" data-screen="application"><span class="nav-icon">□</span>Applications</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="future-note"><span class="spark">✳</span><div><p>Coming later</p><small>Artify learns from your ideas, voice notes and project folders.</small></div></div>
+        <button class="profile-chip" data-screen="profile"><span class="avatar">AM</span><span><strong>Anna M.</strong><small>Sculptor · Latvia</small></span><span class="chevron">↗</span></button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="mobile-brand">ART<span>IFY</span></div>
+        <div class="live-status"><span class="pulse"></span> Agent active <span class="status-divider"></span> Last scan 8 min ago</div>
+        <button class="icon-button" aria-label="Notifications"><span class="notification-dot"></span>♧</button>
+      </header>
+
+      <section class="screen" id="screen-onboarding">
+        <div class="onboarding-wrap">
+          <div class="onboarding-copy">
+            <p class="eyebrow">Welcome to Artify <span>01 / 03</span></p>
+            <h1>Let Artify<br /><em>work for</em> your art.</h1>
+            <p class="intro">Tell Artify who you are once. We'll continuously look for opportunities that fit your work.</p>
+            <div class="onboarding-actions"><button class="primary-button" data-screen="profile">Build my Artify profile <span>→</span></button><button class="text-button" data-screen="opportunities">Explore demo <span>↗</span></button></div>
+            <div class="upload-status"><span class="check-circle">✓</span><div><strong>Your profile starts with your practice.</strong><small>Upload your CV, portfolio or website. Artify does the listening.</small></div></div>
+            <div class="setup-tray">
+              <p class="setup-label">Start with the essentials</p>
+              <div class="setup-row"><button class="setup-chip" data-action="upload">＋ CV</button><button class="setup-chip" data-action="upload">＋ Portfolio</button><button class="setup-chip" data-action="website">↗ Website</button></div>
+              <div class="setup-row"><span class="setup-caption">Looking for</span><button class="setup-chip selected">Public art</button><button class="setup-chip selected">Commissions</button><button class="setup-chip">Grants</button></div>
+              <div class="setup-row"><span class="setup-caption">Across</span><button class="setup-chip selected">Baltics</button><button class="setup-chip selected">Nordics</button><button class="setup-chip">Europe</button><span class="setup-caption budget">From €10k</span></div>
+            </div>
+          </div>
+          <div class="onboarding-art"><div class="image-label">A practice in motion <span>↗</span></div></div>
+        </div>
+      </section>
+
+      <section class="screen hidden" id="screen-profile">
+        <div class="page-heading"><div><p class="eyebrow">Artist profile · <span class="step-count">02 / 03</span></p><h1>We see the<br /><em>shape</em> of your work.</h1><p>Artify has read your materials and found the patterns that make your practice yours.</p></div><button class="edit-button">Edit profile <span>✎</span></button></div>
+        <div class="profile-layout"><div class="profile-art"><div class="art-caption"><span>01</span> Anna Mikelsons<br /><small>Selected studio view · 2024</small></div></div><div class="profile-details"><div class="understood-note"><span>✦</span><p>Artify understands your work and will use this profile to evaluate opportunities.</p></div><div class="detail-grid"><div class="detail-block"><label>Discipline</label><strong>Sculpture</strong></div><div class="detail-block"><label>Materials</label><strong>Bronze, mixed materials</strong></div><div class="detail-block wide"><label>Practice</label><div class="tag-row"><span>Contemporary sculpture</span><span>Monumental / public-space artwork</span><span>Small-scale sculpture</span></div></div><div class="detail-block wide"><label>Themes</label><div class="tag-row muted"><span>Human relationships</span><span>Nature</span><span>Memory</span><span>Place</span></div></div><div class="detail-block wide"><label>Preferred opportunities</label><div class="tag-row warm"><span>Public art</span><span>Architectural commissions</span><span>Hospitality commissions</span><span>Residencies</span></div></div><div class="detail-block"><label>Geography</label><strong>Baltics · Nordics · Europe</strong></div><div class="detail-block"><label>Minimum paid commission</label><strong class="price">€10,000</strong></div></div><button class="primary-button full" data-screen="opportunities">See my opportunities <span>→</span></button></div></div>
+      </section>
+
+      <section class="screen hidden" id="screen-opportunities">
+        <div class="page-heading dashboard-heading"><div><p class="eyebrow">Thursday, 24 September 2026</p><h1>Good morning, <em>Anna.</em></h1><p>Artify searched hundreds of opportunities. These are the ones worth your attention.</p></div><div class="heading-stat"><strong>3</strong><span>new this week<br />picked for you</span></div></div>
+        <div class="agent-banner"><div class="agent-mark">✦</div><div><strong>One opportunity looks particularly relevant to your monumental sculpture work.</strong><span>Artify found it while you were away. Deadline in 12 days · 70% of application material already prepared.</span></div><button class="close-banner" aria-label="Dismiss">×</button></div>
+        <div class="section-bar"><h2>Selected for you <span>06</span></h2><div class="filters"><button class="filter active">All</button><button class="filter">Public art</button><button class="filter">Commissions</button><button class="filter">Grants</button><button class="filter">⌘ Filter</button></div></div>
+        <div class="opportunity-grid">
+          <article class="opportunity-card featured"><div class="card-image waterfront"><span class="demo-badge">DEMO OPPORTUNITY</span><button class="save-button" aria-label="Save opportunity">♡</button><div class="match"><strong>94%</strong><small>match</small></div></div><div class="card-body"><p class="card-type">Public art commission <span>·</span> Helsinki, Finland</p><h3>Waterfront Public Art Programme</h3><div class="card-meta"><span>€35,000</span><span>Due 14 Oct</span><span>Open call</span></div><div class="why"><p>Why Artify selected this</p><span>✓ Professional sculptors eligible</span><span>✓ Latvian / EU artists eligible</span><span>✓ Budget matches your preference</span><span>✓ Monumental sculpture experience relevant</span></div><div class="card-actions"><button class="secondary-button" data-action="dismiss">Not for me</button><button class="secondary-button" data-action="save">Save for later</button><button class="primary-button small" data-screen="application">Let's try <span>→</span></button></div></div></article>
+          <article class="opportunity-card"><div class="card-image residency"><span class="demo-badge">DEMO OPPORTUNITY</span><button class="save-button">♡</button><div class="match"><strong>88%</strong><small>match</small></div></div><div class="card-body"><p class="card-type">Artist residency <span>·</span> Tórshavn, Faroe Islands</p><h3>North Atlantic Materiality</h3><div class="card-meta"><span>€4,500 stipend</span><span>Due 02 Nov</span></div><div class="card-actions"><button class="secondary-button" data-action="save">Save for later</button><button class="primary-button small" data-screen="application">Let's try <span>→</span></button></div></div></article>
+          <article class="opportunity-card"><div class="card-image courtyard"><span class="demo-badge">DEMO OPPORTUNITY</span><button class="save-button">♡</button><div class="match"><strong>86%</strong><small>match</small></div></div><div class="card-body"><p class="card-type">Architectural commission <span>·</span> Tallinn, Estonia</p><h3>Courtyard Works / Telliskivi</h3><div class="card-meta"><span>€18,000–25,000</span><span>Due 28 Oct</span></div><div class="card-actions"><button class="secondary-button" data-action="save">Save for later</button><button class="primary-button small" data-screen="application">Let's try <span>→</span></button></div></div></article>
+        </div>
+        <p class="demo-footnote">All opportunities shown are fictional demo opportunities for this prototype.</p>
+      </section>
+
+      <section class="screen hidden" id="screen-application">
+        <div class="page-heading application-heading"><div><button class="back-button" data-screen="opportunities">← Back to opportunities</button><p class="eyebrow">Waterfront Public Art Programme <span>· Demo</span></p><h1>Let's <em>apply.</em></h1><p>Artify read the call and mapped the work. You decide what carries your voice.</p></div><div class="deadline-card"><span>Deadline</span><strong>14 Oct 2026</strong><small>12 days left</small></div></div>
+        <div class="application-layout"><div class="requirements"><div class="section-bar"><h2>Application requirements</h2><span class="completion">70% ready</span></div><div class="requirement-row done"><span class="req-icon">✓</span><div><strong>CV</strong><small>Already available in your profile</small></div><span class="req-status">Ready</span></div><div class="requirement-row done"><span class="req-icon">✓</span><div><strong>Portfolio</strong><small>Artify selected 8 relevant works</small></div><span class="req-status">Ready</span></div><div class="requirement-row"><span class="req-icon open">○</span><div><strong>Short biography</strong><small>Keep it clear and in your voice</small></div><div class="choice-actions"><button data-action="prepare">Prepare for me</button><button data-action="write">I'll write this</button></div></div><div class="requirement-row"><span class="req-icon open">○</span><div><strong>Project concept</strong><small>What would you make for the waterfront?</small></div><div class="choice-actions"><button data-action="prepare">Prepare first draft</button><button data-action="write">I'll write this</button></div></div><div class="requirement-row selected"><span class="req-icon open">○</span><div><strong>Technical description</strong><small>Materials, scale, installation and maintenance</small></div><div class="choice-actions"><button class="selected-choice" data-screen="prep">Prepare for me <span>→</span></button></div></div><div class="requirement-row"><span class="req-icon open">○</span><div><strong>Artist statement</strong><small>Connect this project to your wider practice</small></div><div class="choice-actions"><button data-action="prepare">Prepare for me</button><button data-action="write">I'll write this</button></div></div><div class="requirement-row"><span class="req-icon open">○</span><div><strong>Budget & timeline</strong><small>Artify can help structure your estimate</small></div><div class="choice-actions"><button data-action="prepare">Help me prepare</button></div></div><div class="requirement-row done"><span class="req-icon">✓</span><div><strong>References</strong><small>2 found in your profile</small></div><span class="req-status">Ready</span></div></div><aside class="call-summary"><p class="eyebrow">The call</p><h3>Waterfront Public Art Programme</h3><p>Helsinki Art & Culture Office is commissioning a permanent work for the new South Harbour promenade.</p><div class="summary-line"><span>Budget</span><strong>€35,000</strong></div><div class="summary-line"><span>Location</span><strong>Helsinki, Finland</strong></div><div class="summary-line"><span>Theme</span><strong>Shared waters</strong></div><div class="voice-note"><span>✦</span><p>“This could hold the feeling you described in your studio notes about memory and water.”</p></div></aside></div>
+      </section>
+
+      <section class="screen hidden" id="screen-prep">
+        <div class="prep-layout"><div class="prep-intro"><button class="back-button" data-screen="application">← Back to checklist</button><p class="eyebrow">AI preparation · Technical description</p><h1>Making the<br /><em>invisible</em> legible.</h1><p>Artify is connecting the call requirements with your materials, previous projects and CV.</p><div class="source-list"><p>Drawing from</p><span>✦ Waterfront Public Art Programme</span><span>✦ Portfolio · 8 selected works</span><span>✦ CV · Anna Mikelsons</span><span>✦ Project “Tide Memory”, 2023</span></div></div><div class="draft-panel"><div class="draft-top"><div><span class="status-pill"><i></i> Preparing</span><h2>Technical description</h2></div><span class="draft-count">Draft 01</span></div><div class="progress-track"><span></span></div><div class="draft-loading"><span class="loading-orb">✦</span><p>Preparing technical description<span class="typing">...</span></p><small>Artify is considering material durability, public access and your bronze practice.</small></div><div class="draft-result"><p>The proposed sculpture will be cast in bronze and designed for permanent outdoor installation along the South Harbour promenade. Its scale will invite movement around the work, allowing the changing light across the water to become part of the piece.</p><p>The form will be developed through Anna Mikelsons' ongoing research into memory held in material. A concealed stainless-steel armature and sealed patina will support longevity in Helsinki's coastal climate, with a low-maintenance surface treatment specified for the first five years.</p><div class="draft-actions"><button class="secondary-button" data-action="edit">Edit</button><button class="secondary-button" data-action="change">Ask Artify to change</button><button class="primary-button" data-screen="ready">Approve <span>→</span></button></div></div></div></div>
+      </section>
+
+      <section class="screen hidden" id="screen-ready">
+        <div class="ready-wrap"><div class="ready-mark">✓</div><p class="eyebrow">Waterfront Public Art Programme · Demo</p><h1>Application<br /><em>100% ready.</em></h1><p class="ready-copy">Everything is in place. Your voice stays yours; Artify handled the repetition.</p><div class="ready-grid"><div class="ready-list"><div>✓ <span>Eligibility checked</span></div><div>✓ <span>CV & portfolio attached</span></div><div>✓ <span>Artist statement</span></div><div>✓ <span>Project concept</span></div><div>✓ <span>Technical description</span></div><div>✓ <span>Budget & required attachments</span></div></div><div class="time-card"><div><span>Without Artify</span><strong>4h 00m</strong></div><div><span>With Artify</span><strong>35m</strong></div><div class="saved"><span>Time saved</span><strong>3h 25m</strong></div></div></div><div class="ready-actions"><button class="secondary-button" data-screen="application">Review application</button><button class="primary-button" data-action="submitted">Ready to submit <span>→</span></button></div><p class="ready-note">You remain in control until the final click.</p></div>
+      </section>
+    </main>
+  </div>
+  <div class="toast" role="status"></div>
+  <script src="artify.js"></script>
+</body>
+</html>
