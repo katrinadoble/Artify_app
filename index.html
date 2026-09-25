@@ -68,11 +68,17 @@
     }
   </style>
   <link rel="stylesheet" href="artify.css" />
+  <style>
+    .brand { display: block; }
+    .brand img { display: block; width: 116px; height: auto; max-height: 48px; object-fit: contain; object-position: left center; }
+    .mobile-brand { display: block; }
+    .mobile-brand img { display: block; width: 86px; height: auto; max-height: 32px; object-fit: contain; object-position: left center; }
+  </style>
 </head>
 <body>
   <div class="app-shell">
     <aside class="sidebar">
-      <a class="brand" href="#" data-screen="opportunities" aria-label="Artify home"><span>ART</span><i>IFY</i></a>
+      <a class="brand" href="#" data-screen="opportunities" aria-label="Artify home"><img src="logo.jpg" alt="Artify" /></a>
       <div class="sidebar-rule"></div>
       <p class="eyebrow side-label">Your art agent</p>
       <nav class="nav-list" aria-label="Main navigation">
@@ -88,7 +94,7 @@
 
     <main class="main-content">
       <header class="topbar">
-        <div class="mobile-brand">ART<span>IFY</span></div>
+        <div class="mobile-brand"><img src="logo.jpg" alt="Artify" /></div>
         <div class="live-status"><span class="pulse"></span> Agent active <span class="status-divider"></span> Last scan 8 min ago</div>
         <button class="icon-button" aria-label="Notifications"><span class="notification-dot"></span>♧</button>
       </header>
