@@ -19,6 +19,16 @@ function showScreen(name) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+const profileSummary = document.querySelector('#screen-profile .understood-note');
+if (profileSummary) {
+  const chatButton = document.createElement('button');
+  chatButton.className = 'agent-chat-button';
+  chatButton.type = 'button';
+  chatButton.dataset.action = 'chat';
+  chatButton.innerHTML = '<span aria-hidden="true">🎙</span> Chat with Artify';
+  profileSummary.insertAdjacentElement('afterend', chatButton);
+}
+
 document.addEventListener('click', (event) => {
   const screenButton = event.target.closest('[data-screen]');
   if (screenButton) {
@@ -59,6 +69,10 @@ document.addEventListener('click', (event) => {
   }
   if (action === 'website') {
     showToast('Website link added to your profile');
+  }
+  if (action === 'chat') {
+    const question = window.prompt('What would you like to ask Artify?');
+    if (question?.trim()) showToast('Artify is listening — your question has been noted');
   }
 });
 
